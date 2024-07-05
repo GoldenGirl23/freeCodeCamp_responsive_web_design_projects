@@ -1,0 +1,1 @@
+In this project we learnt about accessbility best practices by designing a Quiz website. Some key elements included the navigation bar, ARIA labels, keyboard shortcuts, and @media queries.

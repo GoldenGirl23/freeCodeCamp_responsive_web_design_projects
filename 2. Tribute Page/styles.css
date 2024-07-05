@@ -1,0 +1,71 @@
+#main {
+    margin: 20px;
+    background-color: rgba(232, 191, 79, 0.5);
+    font-family: "Garamond", Times;
+    }
+  
+  #title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+    }
+  
+  #title-caption {
+    text-align: center;
+    color: #555;
+    margin-top: 0;
+  }
+  
+  #img-div {
+    margin: 20px 10px;
+    background-color:rgb(212, 194, 148);
+  }
+  
+  #image {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px 5px;
+  }
+  
+  #img-caption {
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  #tribute-info {
+    box-sizing: border-box;
+    text-align: left;
+    margin: 5px 10px;
+    max-width: 100%;
+  }
+  
+  #tribute-info h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  #tribute-info p {
+    margin-top: 0;
+    line-height: 1.2;
+  }
+  
+  .quote span{
+    font-style: italic;
+    color: #666;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #tribute-link {
+    color: rgb(128, 117, 91);
+    text-decoration: underline;
+  }
+  
+  
