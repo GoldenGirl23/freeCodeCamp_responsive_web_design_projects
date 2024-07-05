@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<!-- Head -->
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Python Documentation</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id='navbar'>
+    <header><h1>Python Documentation</h1></header>
+    <ul>
+      <li><a class='nav-link' href='#1_introduction_to_python'><span class='index'>1</span> Introduction to Python</a></li>
+      <li><a class='nav-link' href='#2_data_types_and_variables'><span class='index'>2</span> Data Types and Variables</a></li>
+      <li><a class='nav-link' href='#3_control_flow'><span class='index'>3</span> Control Flow</a></li>
+      <li><a class='nav-link' href='#4_functions'><span class='index'>4</span> Functions</a></li>
+      <li><a class='nav-link' href='#5_modules_and_packages'><span class='index'>5</span> Modules and Packages</a></li>
+      <li><a class='nav-link' href='#6_conclusion'><span class='index'>6</span> Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main id='main-doc'>
+    
+    <!-- Section 1 -->
+    <section class='main-section' id='1_introduction_to_python'>
+      <header><h2><span class='index'>1</span> Introduction to Python</h2></header>
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its use of significant whitespace. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+      <p>Python is dynamically typed and garbage-collected. It is an ideal language for scripting and rapid application development in many areas on most platforms. The comprehensive standard library and its vast ecosystem of third-party packages make it a powerful tool for developers.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class='main-section' id='2_data_types_and_variables'>
+      <header><h2><span class='index'>2</span> Data Types and Variables</h2></header>
+      <p>In Python, variables are used to store data, and they do not require explicit declaration to reserve memory space. The declaration happens automatically when a value is assigned to a variable. Python supports several data types including:</p>
+      <ul>
+        <li><span>Numbers:</span> int, float, complex.</li>
+        <li><span>Strings:</span> A sequence of characters enclosed in quotes.</li>
+        <li><span>Lists:</span> Ordered, mutable collections of elements.</li>
+        <li><span>Tuples:</span> Ordered, immutable collections of elements.</li>
+        <li><span>Dictionaries:</span> Unordered collections of key-value pairs.</li>
+        <li><span>Sets:</span> Unordered collections of unique elements.</li>
+      </ul>
+      <p>Example:</p>
+      <pre><code class='python'>
+        x = 5          # int
+        y = 3.14       # float
+        name = "John"  # string
+        numbers = [1, 2, 3]  # list
+        point = (1, 2)  # tuple
+        user = {"name": "Alice", "age": 25}  # dictionary
+        unique_numbers = {1, 2, 3}  # set
+      </code></pre>
+    </section>
+
+    <!-- Section 3 -->
+    <section class='main-section' id='3_control_flow'>
+      <header><h2><span class='index'>3</span> Control Flow</h2></header>
+      <p>Control flow statements are used to control the execution of the program based on certain conditions. Python includes several control flow statements:</p>
+      <h3>If-Else Statements</h3>
+      <p>The if statement is used for conditional execution. It executes a block of code if a specified condition is true. Optionally, an else statement can be used to execute a block of code if the condition is false.</p>
+      <p>Example:</p>
+      <pre><code class='python'>
+        age = 18
+        if age >= 18:
+            print("You are an adult.")
+        else:
+            print("You are a minor.")
+      </code></pre>
+      <h3>Loops</h3>
+      <p>Python provides two types of loops: for and while.</p>
+        <ul>
+          <li><span>For Loop:</span> Iterates over a sequence (such as a list, tuple, dictionary, set, or string).</li>
+          <li><span>While Loop:</span> Repeats as long as a specified condition is true.</li>
+        </ul>
+      <p>Example:</p>
+      <pre><code class='python'>
+        # For Loop
+        for i in range(5):
+          print(i)
+
+        # While Loop
+          count = 0
+          while count < 5:
+            print(count)
+            count += 1
+      </code></pre>
+    </section>
+    
+    <!-- Section 4 -->
+    <section class='main-section' id='4_functions'>
+      <header><h2><span class='index'>4</span> Functions</h2></header>
+      <p>Functions are blocks of reusable code that perform a specific task. They help to break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable.</p>
+      <p>A function is defined using the <i>def</i>  keyword, followed by the function name and parentheses containing any parameters. Functions can be passed arguments and can also return values using the <i>return</i> statement.</p>
+      <p>Example:</p>
+      <pre><code class='python'>
+        # Defining a function
+        def greet(name):
+          print(f"Hello, {name}!")
+
+        # Calling the function
+        greet("Alice")
+
+        # Returning values from a function
+        def add(a, b):
+          return a + b
+
+        result = add(3, 4)
+        print(result)  # Output: 7
+      </code></pre>
+    </section>
+
+    <!-- Section 5 -->
+    <section class='main-section' id='5_modules_and_packages'>
+      <header><h2><span class='index'>5</span> Modules and Packages</h2></header>
+      <p>Modules and packages in Python help to organize and structure your code effectively in a modular format. A module is a single file containing Python code, whereas a package is a collection of modules that are organized in a directory hierarchy. Modules and packages can be imported and used in another Python program.</p>
+      <p>Example:</p>
+      <pre><code class='python'>
+        import math_module
+
+        result = math_module.add(5, 3)
+        print(result)  # Output: 8
+      </code></pre>
+    </section>
+
+    <!-- Section 6 -->
+    <section class='main-section' id='6_conclusion'>
+      <header><h2><span class='index'>6</span> Conclusion</h2></header>
+      <p>Python is a versatile and powerful programming language that can be used for a wide range of applications. Its simplicity and readability make it an excellent choice for both beginners and experienced developers. For recent updates and more comprehensive details on Python, visit the official <a href="https://docs.python.org/3/" target="_blank">Python documentation</a>.</p>
+    </section>
+    
+  </main>
+</body>
+</html>
