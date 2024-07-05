@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>CoreFlex Fitness Center Registration Form</title>
+    <link rel='stylesheet' href='styles.css'>
+    </head>
+
+    <body>
+        <main>
+            <h1 id='title'>CoreFlex Fitness Center Registration Form</h1>
+            <p id='description'>Join us today to transform your tomorrow</p>
+
+            <form id='survey-form' action='/submit' method='post'>
+                <fieldset>
+                    <label id='name-label' for='name-label'>Full Name <input id='name' name='name-label' class='intro' type='text' placeholder='eg. John Smith' required/></label>
+                    <label id='email-label' for='email-label'>Email <input id='email' name='email-label' class='intro' type='email' placeholder='eg. john.smith@coreflex.com' required/></label>
+                    <label id='number-label' for='number-label'>Age (optional) <input id='number' name='number-label' class='intro' type='number' placeholder='eg. 25' min='12' max='90'/></label>
+                    <label for='address-label'> Address<textarea id='address' name='address-label' rows='2' cols='30' ></textarea></label>
+                    <label for='dropdown-label'>How did you hear about us? 
+                        <select id='dropdown' name='dropdown-label'>
+                            <option value='' disabled selected>(select one)</option>
+                            <option value='1'>Website/Social Media</option>
+                            <option value='2'>Local Advertisement</option>
+                            <option value='3'>Passed By</option>
+                            <option value='4'>Through a Friend</option>
+                            <option value='5'>Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset class='section'>
+                    <legend>How often do you plan on going to the Fitness Center (in a week)</legend>
+                    <label for='<1'><input id='<1' type='radio' name='frequency' value='<1' class='inline' checked /> Once or less</label>
+                    <label for='2-3'><input id='2-3' type='radio' name='frequency' value='2-3' class='inline' checked /> 2-3 times</label>
+                    <label for='4<'><input id='4<' type='radio' name='frequency' value='4<' class='inline' checked /> More than 4 times</label>
+                </fieldset>
+
+                <fieldset class='section'>
+                    <legend> Which of the following of our services would you be interested in</legend>
+                    <label for='gym' ><input class='inline' type='checkbox' id='gym' name='service' value='gym'> Gym</label>
+                    <label for='yoga'><input class='inline' type='checkbox' id='yoga' name='service' value='yoga' /> Yoga</label>
+                    <label for='pilates'><input class='inline' type='checkbox' id='pilates' name='service' value='pilates' /> Pilates</label>
+                    <label for='zumba'><input class='inline' type='checkbox' id='zumba' name='service' value='zumba' /> Zumba/HIIT</label>
+                    <label for='martial'><input class='inline' type='checkbox' id='martial' name='service' value='martial' /> Martial Arts</label>
+                    <label for='swimming'><input class='inline' type='checkbox' id='swimming' name='service' value='swimming' /> Swimming</label>
+                    <label for='aqua'><input class='inline' type='checkbox' id='aqua' name='service' value='aqua' /> Aqua Aerobics</label>
+                    <label for='other'><input class='inline' type='checkbox' id='other' name='service' value='other' onchange='toggleOtherService()'/> Other</label>
+                    <input type='text' class='inline' id='otherService' name='otherService' 
+                    class='inline' placeholder='Please specify...'/>
+                    <script>
+                        function toggleOtherService() {
+                            var otherCheckbox = document.getElementById('other');
+                            var otherServiceInput = document.getElementById('otherService');
+                            if (otherCheckbox.checked) {
+                            otherServiceInput.style.display = 'inline';
+                            } else {
+                            otherServiceInput.style.display = 'none';
+                            otherServiceInput.value = ''; 
+                            }
+                        }
+                    </script>
+                </fieldset>
+                
+                <label for='terms-and-conditions'><input class='terms' id='terms-and-conditions' value='terms' type='checkbox' required name='terms-and-conditions' /> I have read and understood the <a href='https://www.freecodecamp.org/news/terms-of-service/'>terms and conditions</a></label>
+                <input id='submit' type='submit' value='Submit' required/>
+            </form>
+        </main>
+    </body>
+
+</html>
