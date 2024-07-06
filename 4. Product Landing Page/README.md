@@ -1,3 +1,5 @@
+# Certification Project: Product Landing Page
+
 This certification project required us to create a landing page for a product. The following user stories had to be fulfilled: 
 - Your product landing page should have a header element with a corresponding id="header"
 - You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
